@@ -16,4 +16,4 @@ RUN curl -LO https://github.com/BurntSushi/ripgrep/releases/download/0.8.1/ripgr
 
 # Since the Python dependencies tend to change we'll install them at run time,
 # but we can atleast preinstall testing and static analysis related tools
-RUN pip install nose2 yapf
+RUN pip install flake8 nose2

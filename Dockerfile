@@ -4,7 +4,7 @@ MAINTAINER Robbert van der Helm <mail@robbertvanderhelm.nl>
 # Compiling and testing the application depends on Node.js and some Python
 # modules
 RUN curl -sL https://deb.nodesource.com/setup_8.x | bash - \
-  && apt-get install -y nodejs python3 python3-pip \
+  && apt-get install -y nodejs python3 python3-pip zip \
   && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 RUN npm install -g yarn
